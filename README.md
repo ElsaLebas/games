@@ -3,7 +3,7 @@ You will find here few little games :
 - Tic Tac Toe
 - and more to come ...
 
-This project is hosted on [Netlify](https://fewlittlegames.netlify.app/)
+This project is hosted on [Netlify](https://prettylittlegames.netlify.app/)
 
 But first clone this repository to your laptop. 
 You must have [yarn](https://yarnpkg.com/lang/en/docs/install/) installed.
