@@ -2,12 +2,45 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
-    color: chartreuse;
+    background-color: rgb(255, 248, 239);
+    color: rgb(75, 75, 75);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* width: 60px; */
+
+}
+
+li {
+    /* display: inline; */
+    float: left;
+}
+
+li a {
+    display: block;
+    background-color: rgb(75, 75, 75, 0.2);
+    border-radius: 4px;
+    margin: 16px;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: rgb(75, 75, 75, 0.3);
 }
 
 h1 {
     color: currentColor;
+    font-size: 4em;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    padding: 20px;
 }
 
 #board {
@@ -36,7 +69,7 @@ h1 {
 
 .strike {
     position: absolute;
-    background-color: red;
+    background-color: rgb(233, 145, 30);
 }
 
 .strike-row-1 {
@@ -109,13 +142,13 @@ h1 {
     text-decoration: none;
     color: currentColor;
     /* background-color: transparent; */
-    border: 2mm ridge chartreuse;
+    border: 2mm ridge rgb(75, 75, 75);
     padding: 10px;
     font-size: 1.5em;
 }
 
 #play-again:hover {
-    background-color: chartreuse;
+    background-color: rgb(75, 75, 75);
     color: black;
     font-weight: bold;
 }
