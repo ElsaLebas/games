@@ -69,9 +69,7 @@ const checkWinner = () => {
     ) {
       gameOverScreen(tileValue1);
     } else if (boardState.every((element) => element !== null)
-    && tileValue1 !== tileValue2
-    && tileValue1 !== tileValue3
-    && tileValue2 !== tileValue3
+    && (tileValue1 !== tileValue2 || tileValue1 !== tileValue3)
     ) {
       gameOverScreen(null);
     }
