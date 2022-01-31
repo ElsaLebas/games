@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 248, 239);
+    color: rgb(75, 75, 75);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* width: 60px; */
+
+}
+
+li {
+    /* display: inline; */
+    float: left;
+}
+
+li a {
+    display: block;
+    background-color: rgb(75, 75, 75, 0.2);
+    border-radius: 4px;
+    margin: 16px;
+    padding: 8px;
+    text-decoration: none;
+    /* text-align: center; */
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: rgb(75, 75, 75, 0.5);
+}
+
+h1 {
+    color: currentColor;
+    font-size: 4em;
+    margin-top: 8px;
+    padding: 20px;
+}
+
+
+#board {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px;
+    cursor: pointer;   
+    border: rgb(75, 75, 75, 0.8) 2px solid;
+    background-color: blue;
+    /* box-shadow: rgb(75, 75, 75, 0.3) 2px 2px; */
+}
+
+#entry-columns {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 80px;
+    cursor: pointer;   
+    border-left: rgb(75, 75, 75, 0.8) 2px solid;
+    border-right: rgb(75, 75, 75, 0.8) 2px solid;
+    /* box-shadow: rgb(75, 75, 75, 0.3) 2px 2px; */
+}
+
+.tile {
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    border: solid blue;
+    color: white;
+    font-weight: bold;
+}
+
+.entry-tile {
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(75, 75, 75, 0.3);
+}
+
+.tile.player-red {
+    background-color: red;
+}
+
+.tile.player-yellow {
+    background-color: yellow;
+}
+
+/* #score-area {
+    text-align: center;
+    border: black 8px solid;
+    margin-top: 80px;
+    padding: 80px;
+    width: 50%;
+} */
+
+/* #back-menu-link {
+    text-decoration: none;
+    padding: 25%;
+} */

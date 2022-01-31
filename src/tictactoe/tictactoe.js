@@ -2,8 +2,6 @@ const tiles = document.querySelectorAll(".tile");
 const playerX = "X";
 const playerO = "O";
 let turn = playerX;
-// let scorePlayerX = 0;
-// let scorePlayerO = 0;
 
 const boardState = Array(tiles.length);
 boardState.fill(null);
