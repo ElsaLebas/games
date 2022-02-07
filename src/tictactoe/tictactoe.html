@@ -8,38 +8,48 @@
     <title>Games - Tic Tac Toe</title>
 </head>
 <body>
-    <ul>
-        <li><a href="../connectfour/connectfour.html" id="connectfour">Connect Four</a></li>
-        <li><a href="/">Home</a></li>
-        <!-- <li><a href="src/hangman/hangman.html" id="Hangman">Hangman</a></li> -->
-    </ul>
-    <h1>Tic Tac Toe</h1>
+<div class="container">
+    <div class="left-panel">
+        <h1>Tic Tac Toe</h1>
+        <ul>
+            <li><a href="../connectfour/connectfour.html" id="connectfour">Connect Four</a></li>
+            <li><a href="/">Home</a></li>
+            <!-- <li><a href="src/hangman/hangman.html" id="Hangman">Hangman</a></li> -->
+        </ul>
+    </div>
 
-    <!-- <div id="score-panel">
-        <h2>SCORES</h2>
-        <div id="score-text">
-            <p id="playerX-score">Player X => 0</p>
-            <p id="playerO-score">Player O => 0</p>
+    <div class="game-content">
+
+        <div id="score-panel">
+            <h2>SCORES</h2>
+            <div id="score-text">
+                <p id="playerX-score">Player X => 0</p>
+                <p id="playerO-score">Player O => 0</p>
+            </div>
+            <a id="reset-score">❌</a>
+        </div> 
+
+        <div id="board">
+            <div data-index="1" class="tile right-border bottom-border"></div>
+            <div data-index="2" class="tile right-border bottom-border"></div>
+            <div data-index="3" class="tile bottom-border"></div>
+            <div data-index="4" class="tile right-border bottom-border"></div>
+            <div data-index="5" class="tile right-border bottom-border"></div>
+            <div data-index="6" class="tile bottom-border"></div>
+            <div data-index="7" class="tile right-border"></div>
+            <div data-index="8" class="tile right-border"></div>
+            <div data-index="9" class="tile"></div>
+            <div id="strike" class="strike"></div>
         </div>
-        <a id="reset-score">❌</a>
-    </div>  -->
-    <div id="board">
-        <div data-index="1" class="tile right-border bottom-border"></div>
-        <div data-index="2" class="tile right-border bottom-border"></div>
-        <div data-index="3" class="tile bottom-border"></div>
-        <div data-index="4" class="tile right-border bottom-border"></div>
-        <div data-index="5" class="tile right-border bottom-border"></div>
-        <div data-index="6" class="tile bottom-border"></div>
-        <div data-index="7" class="tile right-border"></div>
-        <div data-index="8" class="tile right-border"></div>
-        <div data-index="9" class="tile"></div>
-        <div id="strike" class="strike"></div>
-    </div>
-    <div id="game-over-area" class="hidden">
-        <h2 id="game-over-text">Winner is X</h2>
-        <a id="play-again">Play Again</a>
+
+        
+        <div id="game-over-area" class="hidden">
+            <h2 id="game-over-text">Winner is X</h2>
+            <a id="play-again">Play Again</a>
+        </div>
     </div>
 
+</div>
     <script src="tictactoe.js"></script>
 </body>
 </html>

@@ -6,6 +6,8 @@ let turn = playerX;
 const boardState = Array(tiles.length);
 boardState.fill(null);
 
+let signe = window.prompt('Quelle est la réponse ?');
+
 // Elements
 const strike = document.getElementById("strike");
 const gameOverArea = document.getElementById("game-over-area");
