@@ -12,12 +12,33 @@ html {
   .keys {
     display: flex;
     /* flex: 1; */
-    min-height: 100vh;
+    /* max-height: 100vh; */
     align-items: center;
     justify-content: center;
     flex-wrap:wrap;
   }
-  
+
+  .drumname {
+    display: flex;
+    /* flex: 1; */
+    min-height: 50vh;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+  }
+
+ button {
+  border-radius: .5rem;
+  margin: 2rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 8rem;
+  text-shadow: 0 0 .1rem rgb(81, 81, 81);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+  }
+
   .key {
     border: .4rem solid black;
     border-radius: .5rem;
