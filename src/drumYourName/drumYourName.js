@@ -25,13 +25,13 @@ const keyStyle = event => {
 
 // letterOutput fct to concatenate and displat the letters typed by user (event = keydown)
 const letterOutput = event => {
-  const letter = document.querySelector(`div[data-key="${event.keyCode}"] kbd`).innerText;
+  const letter = document.querySelector(`div[data-key="${event.keyCode}"] kbd`);
   if(!letter) return; // Stop the function from running if the letter is null
   if(!outputSpace) return;
   if(outputSpace.innerText === "Press a Key to Drum Your Name !") {
     outputSpace.innerText ="";
   }
-  outputSpace.innerText += letter;
+  outputSpace.innerText += letter.innerText;
 };
 
 // startNewGame fct to start a new game when the reset btn is cicked (event = btn click)
